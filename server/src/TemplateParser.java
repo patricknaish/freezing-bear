@@ -32,9 +32,11 @@ public class TemplateParser {
 					ResultSet results = dbc.query("SELECT * FROM constituencies, mps "+
 												  "WHERE constituencies.name = mps.constituency "+
 												  "ORDER BY constituencies.name ASC");
-					output.add("<script>\nvar mps = [");
+					output.add("[");
 					while (results.next()) {
 						output.add("{name:\""+results.getString("name")+"\", " +
+							       "lat:\""+results.getString("lat")+"\", " +
+							       "lon:\""+results.getString("lon")+"\", " +
 								   "population:\""+results.getString("population")+"\", " +
 								   "outOfWorkLevel:\""+results.getString("outofwork_level")+"\", " +
 								   "outOfWorkRate:\""+results.getString("outofwork_rate")+"\", " +
@@ -42,11 +44,14 @@ public class TemplateParser {
 								   "incapacityRate:\""+results.getString("incap_rate")+"\", " +
 								   "mpName:\""+results.getString("title")+" "+results.getString("firstname")+" "+results.getString("lastname")+"\"},");
 					}
-					output.add("]\n<\\script>\n");
+					String last = output.get(output.size()-1);
+					last = last.substring(0,last.length()-1);
+					output.set(output.size() - 1, last); 
+					output.add("]");
 					
 				}
 				else {
-					output.add(input);
+					//output.add(input);
 				}
 			}
 		} catch (FileNotFoundException e) {
