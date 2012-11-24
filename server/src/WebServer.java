@@ -1,46 +1,29 @@
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.net.*;
 
 
 public class WebServer {
 
-	private Connection connection;
-
 	public WebServer(int port) throws IOException, ClassNotFoundException, SQLException {
-		
-		log("Connecting to database...");
-		queryDatabase("data.db", "SELECT * FROM constituencies ORDER BY name ASC");
-		log("Connected.");
-		
+				
 		log("Binding on "+InetAddress.getLocalHost().toString()+":"+port);
 		ServerSocket serverSocket = new ServerSocket(port);	
+		log("Listening...");
 		
 		while (true) {
-			log("Listening...");
 			Socket connectionSocket = serverSocket.accept();
 			BufferedReader input = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
 			DataOutputStream output = new DataOutputStream(connectionSocket.getOutputStream());
 			handle(input, output);
 		}
 		
-	}
-	
-	public ResultSet queryDatabase(String path, String query) throws SQLException, ClassNotFoundException {
-		Class.forName("org.sqlite.JDBC");
-		connection = DriverManager.getConnection("jdbc:sqlite:"+path);
-		Statement statement = connection.createStatement();
-	    statement.setQueryTimeout(30);
-	    ResultSet result = statement.executeQuery(query);
-	    connection.close();
-	    return result;
 	}
 	
 	public void log(String message) {
@@ -50,7 +33,14 @@ public class WebServer {
 	public void handle(BufferedReader input, DataOutputStream output) throws IOException, SQLException {
 		int method = 0;
 		
+		if (input == null || output == null) {
+			return;
+		}
+		
 		String methodStr = input.readLine();
+		if (methodStr == null) {
+			return;
+		}
 		String temp = new String(methodStr);
 		methodStr.toUpperCase();
 		if (methodStr.startsWith("GET")) {
@@ -69,9 +59,21 @@ public class WebServer {
 		temp = temp.split(" ")[1];
 		String path = new String(temp);
 		if (path.equals("/")) {
-			path = "/index.html";
+			path = "index.html";
 		}
-		output.writeBytes("You asked for "+path);
+		
+		if (!path.contains(".html")) {
+			output.writeBytes(constructHeader(404));
+			output.close();
+			return;
+		}
+		
+		TemplateParser tp = new TemplateParser(new File(path));
+		Object[] outputHTML = tp.parse();
+		for (int i = 0; i < outputHTML.length; i++) {
+			output.writeBytes((String)outputHTML[i]);
+		}
+		
 		output.close();
 	}
 	
