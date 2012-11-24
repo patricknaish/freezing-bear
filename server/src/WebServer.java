@@ -17,7 +17,7 @@ public class WebServer {
 	public WebServer(int port) throws IOException, ClassNotFoundException, SQLException {
 		
 		log("Connecting to database...");
-		connectToDatabase("data.db", "SELECT * FROM constituencies ORDER BY name ASC");
+		queryDatabase("data.db", "SELECT * FROM constituencies ORDER BY name ASC");
 		log("Connected.");
 		
 		log("Binding on "+InetAddress.getLocalHost().toString()+":"+port);
@@ -33,7 +33,7 @@ public class WebServer {
 		
 	}
 	
-	public ResultSet connectToDatabase(String path, String query) throws SQLException, ClassNotFoundException {
+	public ResultSet queryDatabase(String path, String query) throws SQLException, ClassNotFoundException {
 		Class.forName("org.sqlite.JDBC");
 		connection = DriverManager.getConnection("jdbc:sqlite:"+path);
 		Statement statement = connection.createStatement();
@@ -68,12 +68,15 @@ public class WebServer {
 		
 		temp = temp.split(" ")[1];
 		String path = new String(temp);
+		if (path.equals("/")) {
+			path = "/index.html";
+		}
 		output.writeBytes("You asked for "+path);
 		output.close();
 	}
 	
 	public String constructHeader(int returnCode) {
-		String output = "HTTP/1.0 ";
+		String output = "HTTP/1.1 ";
 		
 		switch(returnCode) {
 			case 200:
