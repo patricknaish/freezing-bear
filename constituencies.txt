@@ -1,0 +1,650 @@
+Aldershot, United Kingdom
+Aldridge-Brownhills, United Kingdom
+Altrincham and Sale West, United Kingdom
+Amber Valley, United Kingdom
+Arundel and South Downs, United Kingdom
+Ashfield, United Kingdom
+Ashford, United Kingdom
+Ashton-under-Lyne, United Kingdom
+Aylesbury, United Kingdom
+Banbury, United Kingdom
+Barking, United Kingdom
+Barnsley Central, United Kingdom
+Barnsley East, United Kingdom
+Barrow and Furness, United Kingdom
+Basildon and Billericay, United Kingdom
+Basingstoke, United Kingdom
+Bassetlaw, United Kingdom
+Bath, United Kingdom
+Batley and Spen, United Kingdom
+Battersea, United Kingdom
+Beaconsfield, United Kingdom
+Beckenham, United Kingdom
+Bedford, United Kingdom
+Bermondsey and Old Southwark, United Kingdom
+Berwick-upon-Tweed, United Kingdom
+Bethnal Green and Bow, United Kingdom
+Beverley and Holderness, United Kingdom
+Bexhill and Battle, United Kingdom
+Bexleyheath and Crayford, United Kingdom
+Birkenhead, United Kingdom
+Birmingham, Edgbaston, United Kingdom
+Birmingham, Erdington, United Kingdom
+Birmingham, Hall Green, United Kingdom
+Birmingham, Hodge Hill, United Kingdom
+Birmingham, Ladywood, United Kingdom
+Birmingham, Northfield, United Kingdom
+Birmingham, Perry Barr, United Kingdom
+Birmingham, Selly Oak, United Kingdom
+Birmingham, Yardley, United Kingdom
+Bishop Auckland, United Kingdom
+Blackburn, United Kingdom
+Blackley and Broughton, United Kingdom
+Blackpool North and Cleveleys, United Kingdom
+Blackpool South, United Kingdom
+Blaydon, United Kingdom
+Blyth Valley, United Kingdom
+Bognor Regis and Littlehampton, United Kingdom
+Bolsover, United Kingdom
+Bolton North East, United Kingdom
+Bolton South East, United Kingdom
+Bolton West, United Kingdom
+Bootle, United Kingdom
+Boston and Skegness, United Kingdom
+Bosworth, United Kingdom
+Bournemouth East, United Kingdom
+Bournemouth West, United Kingdom
+Bracknell, United Kingdom
+Bradford East, United Kingdom
+Bradford South, United Kingdom
+Bradford West, United Kingdom
+Braintree, United Kingdom
+Brent Central, United Kingdom
+Brent North, United Kingdom
+Brentford and Isleworth, United Kingdom
+Brentwood and Ongar, United Kingdom
+Bridgwater and West Somerset, United Kingdom
+Brigg and Goole, United Kingdom
+Brighton, Kemptown, United Kingdom
+Brighton, Pavilion, United Kingdom
+Bristol East, United Kingdom
+Bristol North West, United Kingdom
+Bristol South, United Kingdom
+Bristol West, United Kingdom
+Broadland, United Kingdom
+Bromley and Chislehurst, United Kingdom
+Bromsgrove, United Kingdom
+Broxbourne, United Kingdom
+Broxtowe, United Kingdom
+Buckingham, United Kingdom
+Burnley, United Kingdom
+Burton, United Kingdom
+Bury North, United Kingdom
+Bury South, United Kingdom
+Bury St Edmunds, United Kingdom
+Calder Valley, United Kingdom
+Camberwell and Peckham, United Kingdom
+Camborne and Redruth, United Kingdom
+Cambridge, United Kingdom
+Cannock Chase, United Kingdom
+Canterbury, United Kingdom
+Carlisle, United Kingdom
+Carshalton and Wallington, United Kingdom
+Castle Point, United Kingdom
+Central Devon, United Kingdom
+Central Suffolk and North Ipswich, United Kingdom
+Charnwood, United Kingdom
+Chatham and Aylesford, United Kingdom
+Cheadle, United Kingdom
+Chelmsford, United Kingdom
+Chelsea and Fulham, United Kingdom
+Cheltenham, United Kingdom
+Chesham and Amersham, United Kingdom
+Chesterfield, United Kingdom
+Chichester, United Kingdom
+Chingford and Woodford Green, United Kingdom
+Chippenham, United Kingdom
+Chipping Barnet, United Kingdom
+Chorley, United Kingdom
+Christchurch, United Kingdom
+Cities of London and Westminster, United Kingdom
+City of Chester, United Kingdom
+City of Durham, United Kingdom
+Clacton, United Kingdom
+Cleethorpes, United Kingdom
+Colchester, United Kingdom
+Colne Valley, United Kingdom
+Congleton, United Kingdom
+Copeland, United Kingdom
+Corby, United Kingdom
+Coventry North East, United Kingdom
+Coventry North West, United Kingdom
+Coventry South, United Kingdom
+Crawley, United Kingdom
+Crewe and Nantwich, United Kingdom
+Croydon Central, United Kingdom
+Croydon North, United Kingdom
+Croydon South, United Kingdom
+Dagenham and Rainham, United Kingdom
+Darlington, United Kingdom
+Dartford, United Kingdom
+Daventry, United Kingdom
+Denton and Reddish, United Kingdom
+Derby North, United Kingdom
+Derby South, United Kingdom
+Derbyshire Dales, United Kingdom
+Devizes, United Kingdom
+Dewsbury, United Kingdom
+Don Valley, United Kingdom
+Doncaster Central, United Kingdom
+Doncaster North, United Kingdom
+Dover, United Kingdom
+Dudley North, United Kingdom
+Dudley South, United Kingdom
+Dulwich and West Norwood, United Kingdom
+Ealing Central and Acton, United Kingdom
+Ealing North, United Kingdom
+Ealing, Southall, United Kingdom
+Easington, United Kingdom
+East Devon, United Kingdom
+East Ham, United Kingdom
+East Hampshire, United Kingdom
+East Surrey, United Kingdom
+East Worthing and Shoreham, United Kingdom
+East Yorkshire, United Kingdom
+Eastbourne, United Kingdom
+Eastleigh, United Kingdom
+Eddisbury, United Kingdom
+Edmonton, United Kingdom
+Ellesmere Port and Neston, United Kingdom
+Elmet and Rothwell, United Kingdom
+Eltham, United Kingdom
+Enfield North, United Kingdom
+Enfield, Southgate, United Kingdom
+Epping Forest, United Kingdom
+Epsom and Ewell, United Kingdom
+Erewash, United Kingdom
+Erith and Thamesmead, United Kingdom
+Esher and Walton, United Kingdom
+Exeter, United Kingdom
+Fareham, United Kingdom
+Faversham and Mid Kent, United Kingdom
+Feltham and Heston, United Kingdom
+Filton and Bradley Stoke, United Kingdom
+Finchley and Golders Green, United Kingdom
+Folkestone and Hythe, United Kingdom
+Forest of Dean, United Kingdom
+Fylde, United Kingdom
+Gainsborough, United Kingdom
+Garston and Halewood, United Kingdom
+Gateshead, United Kingdom
+Gedling, United Kingdom
+Gillingham and Rainham, United Kingdom
+Gloucester, United Kingdom
+Gosport, United Kingdom
+Grantham and Stamford, United Kingdom
+Gravesham, United Kingdom
+Great Grimsby, United Kingdom
+Great Yarmouth, United Kingdom
+Greenwich and Woolwich, United Kingdom
+Guildford, United Kingdom
+Hackney North and Stoke Newington, United Kingdom
+Hackney South and Shoreditch, United Kingdom
+Halesowen and Rowley Regis, United Kingdom
+Halifax, United Kingdom
+Haltemprice and Howden, United Kingdom
+Halton, United Kingdom
+Hammersmith, United Kingdom
+Hampstead and Kilburn, United Kingdom
+Harborough, United Kingdom
+Harlow, United Kingdom
+Harrogate and Knaresborough, United Kingdom
+Harrow East, United Kingdom
+Harrow West, United Kingdom
+Hartlepool, United Kingdom
+Harwich and North Essex, United Kingdom
+Hastings and Rye, United Kingdom
+Havant, United Kingdom
+Hayes and Harlington, United Kingdom
+Hazel Grove, United Kingdom
+Hemel Hempstead, United Kingdom
+Hemsworth, United Kingdom
+Hendon, United Kingdom
+Henley, United Kingdom
+Hereford and South Herefordshire, United Kingdom
+Hertford and Stortford, United Kingdom
+Hertsmere, United Kingdom
+Hexham, United Kingdom
+Heywood and Middleton, United Kingdom
+High Peak, United Kingdom
+Hitchin and Harpenden, United Kingdom
+Holborn and St Pancras, United Kingdom
+Hornchurch and Upminster, United Kingdom
+Hornsey and Wood Green, United Kingdom
+Horsham, United Kingdom
+Houghton and Sunderland South, United Kingdom
+Hove, United Kingdom
+Huddersfield, United Kingdom
+Huntingdon, United Kingdom
+Hyndburn, United Kingdom
+Ilford North, United Kingdom
+Ilford South, United Kingdom
+Ipswich, United Kingdom
+Isle of Wight, United Kingdom
+Islington North, United Kingdom
+Islington South and Finsbury, United Kingdom
+Jarrow, United Kingdom
+Keighley, United Kingdom
+Kenilworth and Southam, United Kingdom
+Kensington, United Kingdom
+Kettering, United Kingdom
+Kingston and Surbiton, United Kingdom
+Kingston upon Hull East, United Kingdom
+Kingston upon Hull North, United Kingdom
+Kingston upon Hull West and Hessle, United Kingdom
+Kingswood, United Kingdom
+Knowsley, United Kingdom
+Lancaster and Fleetwood, United Kingdom
+Leeds Central, United Kingdom
+Leeds East, United Kingdom
+Leeds North East, United Kingdom
+Leeds North West, United Kingdom
+Leeds West, United Kingdom
+Leicester East, United Kingdom
+Leicester South, United Kingdom
+Leicester West, United Kingdom
+Leigh, United Kingdom
+Lewes, United Kingdom
+Lewisham East, United Kingdom
+Lewisham West and Penge, United Kingdom
+Lewisham, Deptford, United Kingdom
+Leyton and Wanstead, United Kingdom
+Lichfield, United Kingdom
+Lincoln, United Kingdom
+Liverpool, Riverside, United Kingdom
+Liverpool, Walton, United Kingdom
+Liverpool, Wavertree, United Kingdom
+Liverpool, West Derby, United Kingdom
+Loughborough, United Kingdom
+Louth and Horncastle, United Kingdom
+Ludlow, United Kingdom
+Luton North, United Kingdom
+Luton South, United Kingdom
+Macclesfield, United Kingdom
+Maidenhead, United Kingdom
+Maidstone and The Weald, United Kingdom
+Makerfield, United Kingdom
+Maldon, United Kingdom
+Manchester Central, United Kingdom
+Manchester, Gorton, United Kingdom
+Manchester, Withington, United Kingdom
+Mansfield, United Kingdom
+Meon Valley, United Kingdom
+Meriden, United Kingdom
+Mid Bedfordshire, United Kingdom
+Mid Derbyshire, United Kingdom
+Mid Dorset and North Poole, United Kingdom
+Mid Norfolk, United Kingdom
+Mid Sussex, United Kingdom
+Mid Worcestershire, United Kingdom
+Middlesbrough, United Kingdom
+Middlesbrough South and East Cleveland, United Kingdom
+Milton Keynes North, United Kingdom
+Milton Keynes South, United Kingdom
+Mitcham and Morden, United Kingdom
+Mole Valley, United Kingdom
+Morecambe and Lunesdale, United Kingdom
+Morley and Outwood, United Kingdom
+New Forest East, United Kingdom
+New Forest West, United Kingdom
+Newark, United Kingdom
+Newbury, United Kingdom
+Newcastle upon Tyne Central, United Kingdom
+Newcastle upon Tyne East, United Kingdom
+Newcastle upon Tyne North, United Kingdom
+Newcastle-under-Lyme, United Kingdom
+Newton Abbot, United Kingdom
+Normanton, Pontefract and Castleford, United Kingdom
+North Cornwall, United Kingdom
+North Devon, United Kingdom
+North Dorset, United Kingdom
+North Durham, United Kingdom
+North East Bedfordshire, United Kingdom
+North East Cambridgeshire, United Kingdom
+North East Derbyshire, United Kingdom
+North East Hampshire, United Kingdom
+North East Hertfordshire, United Kingdom
+North East Somerset, United Kingdom
+North Herefordshire, United Kingdom
+North Norfolk, United Kingdom
+North Shropshire, United Kingdom
+North Somerset, United Kingdom
+North Swindon, United Kingdom
+North Thanet, United Kingdom
+North Tyneside, United Kingdom
+North Warwickshire, United Kingdom
+North West Cambridgeshire, United Kingdom
+North West Durham, United Kingdom
+North West Hampshire, United Kingdom
+North West Leicestershire, United Kingdom
+North West Norfolk, United Kingdom
+North Wiltshire, United Kingdom
+Northampton North, United Kingdom
+Northampton South, United Kingdom
+Norwich North, United Kingdom
+Norwich South, United Kingdom
+Nottingham East, United Kingdom
+Nottingham North, United Kingdom
+Nottingham South, United Kingdom
+Nuneaton, United Kingdom
+Old Bexley and Sidcup, United Kingdom
+Oldham East and Saddleworth, United Kingdom
+Oldham West and Royton, United Kingdom
+Orpington, United Kingdom
+Oxford East, United Kingdom
+Oxford West and Abingdon, United Kingdom
+Pendle, United Kingdom
+Penistone and Stocksbridge, United Kingdom
+Penrith and The Border, United Kingdom
+Peterborough, United Kingdom
+Plymouth, Moor View, United Kingdom
+Plymouth, Sutton and Devonport, United Kingdom
+Poole, United Kingdom
+Poplar and Limehouse, United Kingdom
+Portsmouth North, United Kingdom
+Portsmouth South, United Kingdom
+Preston, United Kingdom
+Pudsey, United Kingdom
+Putney, United Kingdom
+Rayleigh and Wickford, United Kingdom
+Reading East, United Kingdom
+Reading West, United Kingdom
+Redcar, United Kingdom
+Redditch, United Kingdom
+Reigate, United Kingdom
+Ribble Valley, United Kingdom
+Richmond (Yorks), United Kingdom
+Richmond Park, United Kingdom
+Rochdale, United Kingdom
+Rochester and Strood, United Kingdom
+Rochford and Southend East, United Kingdom
+Romford, United Kingdom
+Romsey and Southampton North, United Kingdom
+Rossendale and Darwen, United Kingdom
+Rother Valley, United Kingdom
+Rotherham, United Kingdom
+Rugby, United Kingdom
+Ruislip, Northwood and Pinner, United Kingdom
+Runnymede and Weybridge, United Kingdom
+Rushcliffe, United Kingdom
+Rutland and Melton, United Kingdom
+Saffron Walden, United Kingdom
+Salford and Eccles, United Kingdom
+Salisbury, United Kingdom
+Scarborough and Whitby, United Kingdom
+Scunthorpe, United Kingdom
+Sedgefield, United Kingdom
+Sefton Central, United Kingdom
+Selby and Ainsty, United Kingdom
+Sevenoaks, United Kingdom
+Sheffield Central, United Kingdom
+Sheffield South East, United Kingdom
+Sheffield, Brightside and Hillsborough, United Kingdom
+Sheffield, Hallam, United Kingdom
+Sheffield, Heeley, United Kingdom
+Sherwood, United Kingdom
+Shipley, United Kingdom
+Shrewsbury and Atcham, United Kingdom
+Sittingbourne and Sheppey, United Kingdom
+Skipton and Ripon, United Kingdom
+Sleaford and North Hykeham, United Kingdom
+Slough, United Kingdom
+Solihull, United Kingdom
+Somerton and Frome, United Kingdom
+South Basildon and East Thurrock, United Kingdom
+South Cambridgeshire, United Kingdom
+South Derbyshire, United Kingdom
+South Dorset, United Kingdom
+South East Cambridgeshire, United Kingdom
+South East Cornwall, United Kingdom
+South Holland and The Deepings, United Kingdom
+South Leicestershire, United Kingdom
+South Norfolk, United Kingdom
+South Northamptonshire, United Kingdom
+South Ribble, United Kingdom
+South Shields, United Kingdom
+South Staffordshire, United Kingdom
+South Suffolk, United Kingdom
+South Swindon, United Kingdom
+South Thanet, United Kingdom
+South West Bedfordshire, United Kingdom
+South West Devon, United Kingdom
+South West Hertfordshire, United Kingdom
+South West Norfolk, United Kingdom
+South West Surrey, United Kingdom
+South West Wiltshire, United Kingdom
+Southampton, Itchen, United Kingdom
+Southampton, Test, United Kingdom
+Southend West, United Kingdom
+Southport, United Kingdom
+Spelthorne, United Kingdom
+St Albans, United Kingdom
+St Austell and Newquay, United Kingdom
+St Helens North, United Kingdom
+St Helens South and Whiston, United Kingdom
+St Ives, United Kingdom
+Stafford, United Kingdom
+Staffordshire Moorlands, United Kingdom
+Stalybridge and Hyde, United Kingdom
+Stevenage, United Kingdom
+Stockport, United Kingdom
+Stockton North, United Kingdom
+Stockton South, United Kingdom
+Stoke-on-Trent Central, United Kingdom
+Stoke-on-Trent North, United Kingdom
+Stoke-on-Trent South, United Kingdom
+Stone, United Kingdom
+Stourbridge, United Kingdom
+Stratford-on-Avon, United Kingdom
+Streatham, United Kingdom
+Stretford and Urmston, United Kingdom
+Stroud, United Kingdom
+Suffolk Coastal, United Kingdom
+Sunderland Central, United Kingdom
+Surrey Heath, United Kingdom
+Sutton and Cheam, United Kingdom
+Sutton Coldfield, United Kingdom
+Tamworth, United Kingdom
+Tatton, United Kingdom
+Taunton Deane, United Kingdom
+Telford, United Kingdom
+Tewkesbury, United Kingdom
+The Cotswolds, United Kingdom
+The Wrekin, United Kingdom
+Thirsk and Malton, United Kingdom
+Thornbury and Yate, United Kingdom
+Thurrock, United Kingdom
+Tiverton and Honiton, United Kingdom
+Tonbridge and Malling, United Kingdom
+Tooting, United Kingdom
+Torbay, United Kingdom
+Torridge and West Devon, United Kingdom
+Totnes, United Kingdom
+Tottenham, United Kingdom
+Truro and Falmouth, United Kingdom
+Tunbridge Wells, United Kingdom
+Twickenham, United Kingdom
+Tynemouth, United Kingdom
+Uxbridge and South Ruislip, United Kingdom
+Vauxhall, United Kingdom
+Wakefield, United Kingdom
+Wallasey, United Kingdom
+Walsall North, United Kingdom
+Walsall South, United Kingdom
+Walthamstow, United Kingdom
+Wansbeck, United Kingdom
+Wantage, United Kingdom
+Warley, United Kingdom
+Warrington North, United Kingdom
+Warrington South, United Kingdom
+Warwick and Leamington, United Kingdom
+Washington and Sunderland West, United Kingdom
+Watford, United Kingdom
+Waveney, United Kingdom
+Wealden, United Kingdom
+Weaver Vale, United Kingdom
+Wellingborough, United Kingdom
+Wells, United Kingdom
+Welwyn Hatfield, United Kingdom
+Wentworth and Dearne, United Kingdom
+West Bromwich East, United Kingdom
+West Bromwich West, United Kingdom
+West Dorset, United Kingdom
+West Ham, United Kingdom
+West Lancashire, United Kingdom
+West Suffolk, United Kingdom
+West Worcestershire, United Kingdom
+Westminster North, United Kingdom
+Westmorland and Lonsdale, United Kingdom
+Weston-Super-Mare, United Kingdom
+Wigan, United Kingdom
+Wimbledon, United Kingdom
+Winchester, United Kingdom
+Windsor, United Kingdom
+Wirral South, United Kingdom
+Wirral West, United Kingdom
+Witham, United Kingdom
+Witney, United Kingdom
+Woking, United Kingdom
+Wokingham, United Kingdom
+Wolverhampton North East, United Kingdom
+Wolverhampton South East, United Kingdom
+Wolverhampton South West, United Kingdom
+Worcester, United Kingdom
+Workington, United Kingdom
+Worsley and Eccles South, United Kingdom
+Worthing West, United Kingdom
+Wycombe, United Kingdom
+Wyre and Preston North, United Kingdom
+Wyre Forest, United Kingdom
+Wythenshawe and Sale East, United Kingdom
+Yeovil, United Kingdom
+York Central, United Kingdom
+York Outer, United Kingdom
+Belfast East, United Kingdom
+Belfast North, United Kingdom
+Belfast South, United Kingdom
+Belfast West, United Kingdom
+East Antrim, United Kingdom
+East Londonderry, United Kingdom
+Fermanagh and South Tyrone, United Kingdom
+Foyle, United Kingdom
+Lagan Valley, United Kingdom
+Mid Ulster, United Kingdom
+Newry and Armagh, United Kingdom
+North Antrim, United Kingdom
+North Down, United Kingdom
+South Antrim, United Kingdom
+South Down, United Kingdom
+Strangford, United Kingdom
+Upper Bann, United Kingdom
+West Tyrone, United Kingdom
+Aberdeen North, United Kingdom
+Aberdeen South, United Kingdom
+Airdrie and Shotts, United Kingdom
+Angus, United Kingdom
+Argyll and Bute, United Kingdom
+Ayr, Carrick and Cumnock, United Kingdom
+Banff and Buchan, United Kingdom
+Berwickshire, Roxburgh and Selkirk, United Kingdom
+Caithness, Sutherland and Easter Ross, United Kingdom
+Central Ayrshire, United Kingdom
+Coatbridge, Chryston and Bellshill, United Kingdom
+Cumbernauld, Kilsyth and Kirkintilloch East, United Kingdom
+Dumfries and Galloway, United Kingdom
+Dumfriesshire, Clydesdale and Tweeddale, United Kingdom
+Dundee East, United Kingdom
+Dundee West, United Kingdom
+Dunfermline and West Fife, United Kingdom
+East Dunbartonshire, United Kingdom
+East Kilbride, Strathaven and Lesmahagow, United Kingdom
+East Lothian, United Kingdom
+East Renfrewshire, United Kingdom
+Edinburgh East, United Kingdom
+Edinburgh North and Leith, United Kingdom
+Edinburgh South, United Kingdom
+Edinburgh South West, United Kingdom
+Edinburgh West, United Kingdom
+Na h-Eileanan An Iar, United Kingdom
+Falkirk, United Kingdom
+Glasgow Central, United Kingdom
+Glasgow East, United Kingdom
+Glasgow North, United Kingdom
+Glasgow North East, United Kingdom
+Glasgow North West, United Kingdom
+Glasgow South, United Kingdom
+Glasgow South West, United Kingdom
+Glenrothes, United Kingdom
+Gordon, United Kingdom
+Inverclyde, United Kingdom
+Inverness, Nairn, Badenoch and Strathspey, United Kingdom
+Kilmarnock and Loudoun, United Kingdom
+Kirkcaldy and Cowdenbeath, United Kingdom
+Lanark and Hamilton East, United Kingdom
+Linlithgow and East Falkirk, United Kingdom
+Livingston, United Kingdom
+Midlothian, United Kingdom
+Moray, United Kingdom
+Motherwell and Wishaw, United Kingdom
+North Ayrshire and Arran, United Kingdom
+North East Fife, United Kingdom
+Ochil and South Perthshire, United Kingdom
+Orkney and Shetland, United Kingdom
+Paisley and Renfrewshire North, United Kingdom
+Paisley and Renfrewshire South, United Kingdom
+Perth and North Perthshire, United Kingdom
+Ross, Skye and Lochaber, United Kingdom
+Rutherglen and Hamilton West, United Kingdom
+Stirling, United Kingdom
+West Aberdeenshire and Kincardine, United Kingdom
+West Dunbartonshire, United Kingdom
+Ynys M?n, United Kingdom
+Delyn, United Kingdom
+Alyn and Deeside, United Kingdom
+Wrexham, United Kingdom
+Llanelli, United Kingdom
+Gower, United Kingdom
+Swansea West, United Kingdom
+Swansea East, United Kingdom
+Aberavon, United Kingdom
+Cardiff Central, United Kingdom
+Cardiff North, United Kingdom
+Rhondda, United Kingdom
+Torfaen, United Kingdom
+Monmouth, United Kingdom
+Newport East, United Kingdom
+Newport West, United Kingdom
+Arfon, United Kingdom
+Aberconwy, United Kingdom
+Clwyd West, United Kingdom
+Vale of Clwyd, United Kingdom
+Dwyfor Meirionnydd, United Kingdom
+Clwyd South, United Kingdom
+Montgomeryshire, United Kingdom
+Ceredigion, United Kingdom
+Preseli Pembrokeshire, United Kingdom
+Carmarthen West and Pembrokeshire South, United Kingdom
+Carmarthen East and Dinefwr, United Kingdom
+Brecon and Radnorshire, United Kingdom
+Neath, United Kingdom
+Cynon Valley, United Kingdom
+Merthyr Tydfil and Rhymney, United Kingdom
+Blaenau Gwent, United Kingdom
+Bridgend, United Kingdom
+Ogmore, United Kingdom
+Pontypridd, United Kingdom
+Caerphilly, United Kingdom
+Islwyn, United Kingdom
+Vale of Glamorgan, United Kingdom
+Cardiff West, United Kingdom
+Cardiff South and Penarth, United Kingdom
