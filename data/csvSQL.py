@@ -74,42 +74,24 @@ def extractAll():
         cidict[line[0]]['incap_level'] = tryInt(line[1])
         cidict[line[0]]['incap_rate'] = tryFloat(line[2])
 
-    for key in cidict:
-        name = cidict[key]['name']
-        if name == "Ynys Môn":
-            name == "Ynys Mon"
-        payload = {'constituency':name, 'output':'json', 'key':'B8RJFyDQSYcdAQyaoeBEP39b'}
-        r = requests.get('http://www.theyworkforyou.com/api/getMP', params=payload)
-        if r.status_code == 200 and r.json is not None:
-            try:
-                cidict[key]['mpid'] = r.json['member_id']
-                cidict[key]['mpname'] = r.json['full_name']
-            except KeyError:
-                print(name)
-                cidict[key]['mpid'] = 0
-                cidict[key]['mpname'] = "None"
     return cidict
 
 def insertDatabase(data, location):
     with sqlite3.connect(location) as conn:
         c = conn.cursor()
         c.execute('''drop table if exists constituencies''')
-        c.execute('''create table constituencies (id text, name text, mpid text, population integer, outofwork_level integer, outofwork_rate real, incap_level integer, incap_rate real)''')
-        c.execute('''drop table if exists mps''')
-        c.execute('''create table mps (id text, name text)''')
-
+        c.execute('''CREATE TABLE constituencies (id text primary key, name text, population integer, outofwork_level integer, outofwork_rate real, incap_level integer, incap_rate real, foreign key(name) references mps(name) on update restrict)''')
+ 
         for pk in data:
             values = data[pk]            
             c.execute('''insert into constituencies values (?, ?, ?, ?, ?, ?, ?)''', 
                       (pk,
                        values['name'],
-                       values['mpid'],
                        values['population'],
                        values['outofwork_level'],
                        values['outofwork_rate'],
                        values['incap_level'],
-                       values['incap_rate']))
-            c.execute('''insert into mps values(?, ?)''', (values['mpid'], values['mpname']))
+                       values['incap_rate']))            
         conn.commit()
         
 if __name__ == '__main__':
