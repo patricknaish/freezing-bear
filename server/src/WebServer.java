@@ -2,12 +2,23 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.net.*;
 
 
 public class WebServer {
 
-	public WebServer(int port) throws IOException {
+	private Connection connection;
+
+	public WebServer(int port) throws IOException, ClassNotFoundException, SQLException {
+		
+		log("Connecting to database...");
+		connectToDatabase("data.db", "SELECT * FROM constituencies ORDER BY name ASC");
+		log("Connected.");
 		
 		log("Binding on "+InetAddress.getLocalHost().toString()+":"+port);
 		ServerSocket serverSocket = new ServerSocket(port);	
@@ -22,11 +33,21 @@ public class WebServer {
 		
 	}
 	
+	public ResultSet connectToDatabase(String path, String query) throws SQLException, ClassNotFoundException {
+		Class.forName("org.sqlite.JDBC");
+		connection = DriverManager.getConnection("jdbc:sqlite:"+path);
+		Statement statement = connection.createStatement();
+	    statement.setQueryTimeout(30);
+	    ResultSet result = statement.executeQuery(query);
+	    connection.close();
+	    return result;
+	}
+	
 	public void log(String message) {
 		System.out.println(message);
 	}
 	
-	public void handle(BufferedReader input, DataOutputStream output) throws IOException {
+	public void handle(BufferedReader input, DataOutputStream output) throws IOException, SQLException {
 		int method = 0;
 		
 		String methodStr = input.readLine();
@@ -49,7 +70,6 @@ public class WebServer {
 		String path = new String(temp);
 		output.writeBytes("You asked for "+path);
 		output.close();
-		
 	}
 	
 	public String constructHeader(int returnCode) {
@@ -79,7 +99,7 @@ public class WebServer {
 		
 	}
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
 		new WebServer(1337);
 	}
 	
