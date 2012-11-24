@@ -94,18 +94,22 @@ def insertDatabase(data, location):
     with sqlite3.connect(location) as conn:
         c = conn.cursor()
         c.execute('''drop table if exists constituencies''')
-        c.execute('''create table constituencies (id text, name text, population integer, outofwork_level integer, outofwork_rate real, incap_level integer, incap_rate real)''')
+        c.execute('''create table constituencies (id text, name text, mpid text, population integer, outofwork_level integer, outofwork_rate real, incap_level integer, incap_rate real)''')
+        c.execute('''drop table if exists mps''')
+        c.execute('''create table mps (id text, name text)''')
 
         for pk in data:
             values = data[pk]            
             c.execute('''insert into constituencies values (?, ?, ?, ?, ?, ?, ?)''', 
                       (pk,
-                      values['name'],
-                      values['population'],
-                      values['outofwork_level'],
-                      values['outofwork_rate'],
-                      values['incap_level'],
-                      values['incap_rate']))
+                       values['name'],
+                       values['mpid'],
+                       values['population'],
+                       values['outofwork_level'],
+                       values['outofwork_rate'],
+                       values['incap_level'],
+                       values['incap_rate']))
+            c.execute('''insert into mps values(?, ?)''', (values['mpid'], values['mpname']))
         conn.commit()
         
 if __name__ == '__main__':
