@@ -16,6 +16,11 @@ def tryFloat(s):
     except:
         return 0.0
 
+def extractLatLong():
+    with open('latlongconst.json') as f:
+        a = json.loads(f.read())
+        return a
+
 def extractIncapacityBenefits():
     with open('Incapacity benefit claimants.csv') as incap:
         csv_reader = csv.reader(incap)
@@ -57,6 +62,7 @@ def extractAll():
     pop = extractPopulations()
     oow = extractOutOfWorkBenefits()
     inc = extractIncapacityBenefits()
+    lln = extractLatLong()
 
     cidict = {line[0]:dict() for line in (wag + une + pop + oow + inc)}
     for line in wag:
@@ -74,24 +80,33 @@ def extractAll():
         cidict[line[0]]['incap_level'] = tryInt(line[1])
         cidict[line[0]]['incap_rate'] = tryFloat(line[2])
 
+    for key in cidict:
+        name = cidict[key]['name']
+        for entry in lln:
+            if entry['name'] == name:
+                cidict[key]['lat'] = entry['lat']
+                cidict[key]['lon'] = entry['lon']
     return cidict
 
 def insertDatabase(data, location):
     with sqlite3.connect(location) as conn:
         c = conn.cursor()
         c.execute('''drop table if exists constituencies''')
-        c.execute('''CREATE TABLE constituencies (id text primary key, name text, population integer, outofwork_level integer, outofwork_rate real, incap_level integer, incap_rate real, foreign key(name) references mps(name) on update restrict)''')
+        c.execute('''CREATE TABLE constituencies (id text primary key, name text, population integer, outofwork_level integer, outofwork_rate real, incap_level integer, incap_rate real, lat real, lon real, foreign key(name) references mps(name) on update restrict)''')
  
         for pk in data:
-            values = data[pk]            
-            c.execute('''insert into constituencies values (?, ?, ?, ?, ?, ?, ?)''', 
+            values = data[pk]
+
+            c.execute('''insert into constituencies values (?, ?, ?, ?, ?, ?, ?, ?, ?)''', 
                       (pk,
                        values['name'],
                        values['population'],
                        values['outofwork_level'],
                        values['outofwork_rate'],
                        values['incap_level'],
-                       values['incap_rate']))            
+                       values['incap_rate'],
+                       float(values['lat']),
+                       float(values['lon'])))            
         conn.commit()
         
 if __name__ == '__main__':
