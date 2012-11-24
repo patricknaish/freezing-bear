@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
+import json
 import csv
 import sqlite3
+import requests
 
 def tryInt(s):
     try:
@@ -72,11 +74,26 @@ def extractAll():
         cidict[line[0]]['incap_level'] = tryInt(line[1])
         cidict[line[0]]['incap_rate'] = tryFloat(line[2])
 
+    for key in cidict:
+        name = cidict[key]['name']
+        if name == "Ynys Môn":
+            name == "Ynys Mon"
+        payload = {'constituency':name, 'output':'json', 'key':'B8RJFyDQSYcdAQyaoeBEP39b'}
+        r = requests.get('http://www.theyworkforyou.com/api/getMP', params=payload)
+        if r.status_code == 200 and r.json is not None:
+            try:
+                cidict[key]['mpid'] = r.json['member_id']
+                cidict[key]['mpname'] = r.json['full_name']
+            except KeyError:
+                print(name)
+                cidict[key]['mpid'] = 0
+                cidict[key]['mpname'] = "None"
     return cidict
 
 def insertDatabase(data, location):
     with sqlite3.connect(location) as conn:
         c = conn.cursor()
+        c.execute('''drop table if exists constituencies''')
         c.execute('''create table constituencies (id text, name text, population integer, outofwork_level integer, outofwork_rate real, incap_level integer, incap_rate real)''')
 
         for pk in data:
