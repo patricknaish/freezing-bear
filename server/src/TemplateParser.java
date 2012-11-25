@@ -43,7 +43,9 @@ public class TemplateParser {
 								   "incapacityLevel:\""+results.getString("incap_level")+"\", " +
 								   "incapacityRate:\""+results.getString("incap_rate")+"\", " +
 								   "medianWage:\""+results.getString("medianwage")+"\", " +
-								   "mpName:\""+results.getString("title")+" "+results.getString("firstname")+" "+results.getString("lastname")+"\"},");
+								   "mpName:\""+results.getString("title")+" "+results.getString("firstname")+" "+results.getString("lastname")+"\", " +
+								   "mpExpenses:\""+results.getString("expense")+"\", " +
+								   "mpImg:\"/img/"+results.getString("firstname")+"_"+results.getString("lastname")+".jpg\"},");
 					}
 					String last = output.get(output.size()-1);
 					last = last.substring(0,last.length()-1);
