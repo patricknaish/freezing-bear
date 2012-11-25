@@ -8,6 +8,8 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.URL;
+import java.net.URLDecoder;
 import java.sql.SQLException;
 
 
@@ -69,13 +71,22 @@ public class WebServer {
 		
 		if (path.contains(".jpg")) {
 			int outputJPG;
-			FileInputStream f = new FileInputStream(path);
-			output.writeBytes(constructHeader(200,1));
-			while ((outputJPG = f.read()) != -1) {
-				output.writeByte(outputJPG);
+			path = URLDecoder.decode(path, "UTF-8");
+			path = path.replace(" ", "_");
+			try {
+				FileInputStream f = new FileInputStream(path);
+				output.writeBytes(constructHeader(200,1));
+				while ((outputJPG = f.read()) != -1) {
+					output.writeByte(outputJPG);
+				}
+				output.close();
+				return;
+			} 
+			catch (Exception e) {
+				output.writeBytes(constructHeader(404, 1));
+				output.close();
+				return;
 			}
-			output.close();
-			return;
 		}
 		
 		if (!path.contains(".html")) {
