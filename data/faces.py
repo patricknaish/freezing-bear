@@ -45,8 +45,6 @@ def downloadPhoto(uri, name):
 mpuris = getAllMPUrls()
 for mpuri in mpuris:
     mpphotouri, mpname = getPhotoURIOfMPFromURI(mpuri)
-    print("Downloading %s's photo" % mpname)
-    downloadPhoto(mpphotouri, mpname)
-    print("Downloaded.")
+    print(mpphotouri + " : " + mpname)
 
     
