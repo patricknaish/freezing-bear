@@ -61,13 +61,24 @@ public class TemplateParser {
 					else if (method.equals("rankByExpenses")) {
 						DatabaseConnector dbc = new DatabaseConnector(path);
 						
-						ResultSet results = dbc.query("SELECT title, firstname, lastname, name, CAST(expense AS float)/(SELECT MAX(expense) FROM mps)-CAST(medianwage AS float)/(SELECT MAX(medianwage) FROM constituencies)+1 AS screwedness FROM constituencies, mps " +
+						ResultSet results = dbc.query("SELECT title, firstname, lastname, name, lat, lon, population, outofwork_level, outofwork_rate, incap_level, incap_rate, medianwage, expense, attendance, rebellion,  CAST(expense AS float)/(SELECT MAX(expense) FROM mps)-CAST(medianwage AS float)/(SELECT MAX(medianwage) FROM constituencies)+1 AS screwedness FROM constituencies, mps " +
 								  					  "WHERE constituencies.name = mps.constituency "+
 													  "ORDER BY screwedness DESC");
 						output.add("[");
 						while (results.next()) {
-							output.add("{mpName:\""+results.getString("title")+" "+results.getString("firstname")+" "+results.getString("lastname")+"\", " +
-									   "mpConstituency:\""+results.getString("name")+"\", " +
+							output.add("{name:\""+results.getString("name")+"\", " +
+								       "lat:\""+results.getString("lat")+"\", " +
+								       "lon:\""+results.getString("lon")+"\", " +
+									   "population:\""+results.getString("population")+"\", " +
+									   "outOfWorkLevel:\""+results.getString("outofwork_level")+"\", " +
+									   "outOfWorkRate:\""+results.getString("outofwork_rate")+"\", " +
+									   "incapacityLevel:\""+results.getString("incap_level")+"\", " +
+									   "incapacityRate:\""+results.getString("incap_rate")+"\", " +
+									   "medianWage:\""+results.getString("medianwage")+"\", " +
+									   "mpName:\""+results.getString("title")+" "+results.getString("firstname")+" "+results.getString("lastname")+"\", " +
+									   "mpExpenses:\""+results.getString("expense")+"\", " +
+									   "mpAttendance:\""+results.getString("attendance")+"\", " +
+									   "mpRebellion:\""+results.getString("rebellion")+"\", " +
 									   "screwedness:\""+results.getString("screwedness")+"\", " +
 									   "mpImg:\"/img/"+results.getString("firstname")+"_"+results.getString("lastname")+".jpg\"},");
 						}
