@@ -92,12 +92,12 @@ def insertDatabase(data, location):
     with sqlite3.connect(location) as conn:
         c = conn.cursor()
         c.execute('''drop table if exists constituencies''')
-        c.execute('''CREATE TABLE constituencies (id text primary key, name text, population integer, outofwork_level integer, outofwork_rate real, incap_level integer, incap_rate real, lat real, lon real, foreign key(name) references mps(name) on update restrict)''')
+        c.execute('''CREATE TABLE constituencies (id text primary key, name text, population integer, outofwork_level integer, outofwork_rate real, incap_level integer, incap_rate real, medianwage integer, lat real, lon real, foreign key(name) references mps(name) on update restrict)''')
  
         for pk in data:
             values = data[pk]
 
-            c.execute('''insert into constituencies values (?, ?, ?, ?, ?, ?, ?, ?, ?)''', 
+            c.execute('''insert into constituencies values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', 
                       (pk,
                        values['name'],
                        values['population'],
@@ -105,6 +105,7 @@ def insertDatabase(data, location):
                        values['outofwork_rate'],
                        values['incap_level'],
                        values['incap_rate'],
+                       values['medianwage'],
                        float(values['lat']),
                        float(values['lon'])))            
         conn.commit()
