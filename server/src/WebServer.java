@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
@@ -51,7 +53,7 @@ public class WebServer {
 		}
 		
 		if (method == 0) {
-			output.writeBytes(constructHeader(501));
+			output.writeBytes(constructHeader(501,0));
 			output.close();
 			return;
 		}
@@ -61,9 +63,23 @@ public class WebServer {
 		if (path.equals("/")) {
 			path = "index.html";
 		}
+		else {
+			path = path.substring(1);
+		}
+		
+		if (path.contains(".jpg")) {
+			int outputJPG;
+			FileInputStream f = new FileInputStream(path);
+			output.writeBytes(constructHeader(200,1));
+			while ((outputJPG = f.read()) != -1) {
+				output.writeByte(outputJPG);
+			}
+			output.close();
+			return;
+		}
 		
 		if (!path.contains(".html")) {
-			output.writeBytes(constructHeader(404));
+			output.writeBytes(constructHeader(404,0));
 			output.close();
 			return;
 		}
@@ -77,7 +93,7 @@ public class WebServer {
 		output.close();
 	}
 	
-	public String constructHeader(int returnCode) {
+	public String constructHeader(int returnCode, int fileType) {
 		String output = "HTTP/1.1 ";
 		
 		switch(returnCode) {
@@ -90,6 +106,9 @@ public class WebServer {
 			case 403:
 				output += "403 Forbidden";
 				break;
+			case 404:
+				output += "404 Not Found";
+				break;
 			case 500:
 				output += "500 Internal Server Error";
 				break;
@@ -98,7 +117,12 @@ public class WebServer {
 				break;
 		}
 		
-		output += "\r\nConnection: close\r\nServer: frozen-bear\r\nContent-Type: text/html\r\n\r\n";
+		if (fileType == 0) {		
+			output += "\r\nConnection: close\r\nServer: frozen-bear\r\nContent-Type: text/html\r\n\r\n";
+		}
+		else if (fileType == 1) {
+			output += "\r\nConnection: close\r\nServer: frozen-bear\r\nContent-Type: image/jpeg\r\n\r\n";
+		}
 	
 		return output;
 		
