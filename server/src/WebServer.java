@@ -95,13 +95,20 @@ public class WebServer {
 			return;
 		}
 		
-		TemplateParser tp = new TemplateParser(new File(path));
-		Object[] outputHTML = tp.parse();
-		for (int i = 0; i < outputHTML.length; i++) {
-			output.writeBytes((String)outputHTML[i]);
+		try {
+			TemplateParser tp = new TemplateParser(new File(path));
+			Object[] outputHTML = tp.parse();
+			for (int i = 0; i < outputHTML.length; i++) {
+				output.writeBytes((String)outputHTML[i]);
+			}
+			
+			output.close();
 		}
-		
-		output.close();
+		catch (Exception e) {
+			output.writeBytes(constructHeader(404,0));
+			output.close();
+			return;
+		}
 	}
 	
 	public String constructHeader(int returnCode, int fileType) {
