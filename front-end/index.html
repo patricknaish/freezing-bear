@@ -4,13 +4,28 @@
   </div>
 
   <script id="const" type="text/x-handlebars-template">
-    <h2>{{name}}</h2>
-    <dl>
-      <dt>MP</dt>
-        <dd>{{mpName}}</dd>
-      <dt>Median Wage</dt>
-        <dd>{{medianWage}}</dd>
-    </dl>
+    <div class="popover">
+      <h2>{{name}}</h2>
+      <img src="{{mpImg}}" />
+      <dl>
+        <dt>MP</dt>
+          <dd>{{mpName}}</dd>
+        <dt>MP Expenses (2011)</dt>
+          <dd>£{{mpExpenses}}</dd>
+        <dt>MP Commons Attendance</dt>
+          <dd>{{mpAttendance}}%</dd>
+        <dt>MP Rebellion Rate</dt>
+          <dd>{{mpRebellion}}%</dd>
+        <dt>Median Wage</dt>
+          <dd>£{{medianWage}}</dd>
+        <dt>Unemployment Rate</dt>
+          <dd>{{outOfWorkRate}}%</dd>
+        <dt>Incapacity Rate</dt>
+          <dd>{{incapacityRate}}%</dd>
+        <dt>Inequality</dt>
+          <dd>{{screwedness}}%</dd>
+      </dl>
+    </div>
   </script>
 
   <div id="options">
@@ -20,14 +35,11 @@
     <div id="boundaries">
       <h3>Boundaries</h3>
     </div>
-    <div id="unemployment">
-      <h3>Unemployment</h3>
-    </div>
-    <div id="wage">
-      <h3>Wages</h3>
-    </div>
     <div id="population">
       <h3>Population</h3>
+    </div>
+    <div id="inequality">
+      <h3>Inequality</h3>
     </div>
   </div>
   
