@@ -45,6 +45,8 @@ public class TemplateParser {
 								   "medianWage:\""+results.getString("medianwage")+"\", " +
 								   "mpName:\""+results.getString("title")+" "+results.getString("firstname")+" "+results.getString("lastname")+"\", " +
 								   "mpExpenses:\""+results.getString("expense")+"\", " +
+								   "mpAttendance:\""+results.getString("attendance")+"\", " +
+								   "mpRebellion:\""+results.getString("rebellion")+"\", " +
 								   "mpImg:\"/img/"+results.getString("firstname")+"_"+results.getString("lastname")+".jpg\"},");
 					}
 					String last = output.get(output.size()-1);
