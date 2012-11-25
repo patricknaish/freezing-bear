@@ -89,6 +89,26 @@ public class WebServer {
 			}
 		}
 		
+		if (path.contains(".css")) {
+			int outputJPG;
+			path = URLDecoder.decode(path, "UTF-8");
+			path = path.replace(" ", "_");
+			try {
+				FileInputStream f = new FileInputStream(path);
+				output.writeBytes(constructHeader(200,2));
+				while ((outputJPG = f.read()) != -1) {
+					output.writeByte(outputJPG);
+				}
+				output.close();
+				return;
+			} 
+			catch (Exception e) {
+				output.writeBytes(constructHeader(404, 2));
+				output.close();
+				return;
+			}
+		}
+		
 		if (!path.contains(".html")) {
 			output.writeBytes(constructHeader(404,0));
 			output.close();
@@ -98,6 +118,7 @@ public class WebServer {
 		try {
 			TemplateParser tp = new TemplateParser(new File(path));
 			Object[] outputHTML = tp.parse();
+			output.writeBytes(constructHeader(200,0));
 			for (int i = 0; i < outputHTML.length; i++) {
 				output.writeBytes((String)outputHTML[i]);
 			}
@@ -140,6 +161,9 @@ public class WebServer {
 		}
 		else if (fileType == 1) {
 			output += "\r\nConnection: close\r\nServer: frozen-bear\r\nContent-Type: image/jpeg\r\n\r\n";
+		}
+		else if (fileType == 2) {
+			output += "\r\nConnection: close\r\nServer: frozen-bear\r\nContent-Type: text/css\r\n\r\n";
 		}
 	
 		return output;

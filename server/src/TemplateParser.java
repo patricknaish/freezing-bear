@@ -60,16 +60,15 @@ public class TemplateParser {
 					}
 					else if (method.equals("rankByExpenses")) {
 						DatabaseConnector dbc = new DatabaseConnector(path);
-						ResultSet results = dbc.query("SELECT * FROM constituencies, mps " +
+						
+						ResultSet results = dbc.query("SELECT title, firstname, lastname, name, CAST(expense AS float)/(SELECT MAX(expense) FROM mps)-CAST(medianwage AS float)/(SELECT MAX(medianwage) FROM constituencies)+1 AS screwedness FROM constituencies, mps " +
 								  					  "WHERE constituencies.name = mps.constituency "+
-													  "ORDER BY expense DESC");
+													  "ORDER BY screwedness DESC");
 						output.add("[");
 						while (results.next()) {
 							output.add("{mpName:\""+results.getString("title")+" "+results.getString("firstname")+" "+results.getString("lastname")+"\", " +
 									   "mpConstituency:\""+results.getString("name")+"\", " +
-									   "mpExpenses:\""+results.getString("expense")+"\", " +
-									   "mpAttendance:\""+results.getString("attendance")+"\", " +
-									   "mpRebellion:\""+results.getString("rebellion")+"\", " +
+									   "screwedness:\""+results.getString("screwedness")+"\", " +
 									   "mpImg:\"/img/"+results.getString("firstname")+"_"+results.getString("lastname")+".jpg\"},");
 						}
 						String last = output.get(output.size()-1);
