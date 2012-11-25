@@ -42,6 +42,7 @@ public class TemplateParser {
 								   "outOfWorkRate:\""+results.getString("outofwork_rate")+"\", " +
 								   "incapacityLevel:\""+results.getString("incap_level")+"\", " +
 								   "incapacityRate:\""+results.getString("incap_rate")+"\", " +
+								   "medianWage:\""+results.getString("medianwage")+"\", " +
 								   "mpName:\""+results.getString("title")+" "+results.getString("firstname")+" "+results.getString("lastname")+"\"},");
 					}
 					String last = output.get(output.size()-1);
